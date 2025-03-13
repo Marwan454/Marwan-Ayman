@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlueShadow - من نحن</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background: linear-gradient(-45deg, #000428, #004e92, #000428);
+            background-size: 400% 400%;
+            animation: gradientMove 10s ease infinite;
+            font-family: 'Poppins', sans-serif;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding: 20px;
+        }
+        @keyframes gradientMove {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        h1 {
+            font-size: 60px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            background: linear-gradient(90deg, #00c6ff, #ffffff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.3);
+        }
+        .content {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .content h2 {
+            font-size: 28px;
+            margin-top: 20px;
+            color: #ffcc00;
+        }
+        .content p {
+            font-size: 18px;
+            margin: 10px 0;
+            line-height: 1.6;
+        }
+        .images {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .images img {
+            width: 250px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
+            transition: transform 0.3s ease;
+        }
+        .images img:hover {
+            transform: scale(1.1);
+        }
+        .btn {
+            margin-top: 20px;
+            display: inline-block;
+            padding: 12px 24px;
+            font-size: 18px;
+            color: #fff;
+            background: #ffcc00;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+        .btn:hover {
+            background: #e6b800;
+        }
+    </style>
+</head>
+<body>
+    <h1>من نحن</h1>
+    <div class="content">
+        <h2>رؤيتنا</h2>
+        <p>نحن فريق متخصص في تقديم أفضل الحلول البرمجية والتصميمية. هدفنا هو إنشاء مواقع وتطبيقات عالية الجودة تلبي احتياجات المستخدمين بأفضل تجربة ممكنة.</p>
+        
+        <h2>ماذا نقدم؟</h2>
+        <p>نحن نقدم خدمات تصميم مواقع احترافية، تطوير برمجيات متقدمة، وتحسين تجربة المستخدم لمساعدتك في النجاح في عالم الإنترنت.</p>
+        
+        <h2>لماذا نحن؟</h2>
+        <p>نحن نؤمن بأن الجودة والابتكار هما مفتاح النجاح. نحرص على تقديم حلول تقنية مبتكرة تناسب جميع احتياجات عملائنا.</p>
+        
+        <div class="images">
+            <img src="photo3.webp" alt="تصميم مواقع">
+            <img src="photo 2.webp" alt="برمجة تطبيقات">
+            <img src="photo 1.webp" alt="تطوير البرمجيات">
+        </div>
+    </div>
+    
+    <a href="index.html" class="btn">العودة إلى الرئيسية</a>
+</body>
+</html>
